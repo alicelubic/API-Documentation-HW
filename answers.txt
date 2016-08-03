@@ -17,7 +17,7 @@ GET https://api.instagram.com/v1/users/{user-id}/relationship?access_token=ACCES
 
 5. In the previous question, we wanted to get the current user's relationshp to not just one other user, but to each user in a list. Could we gather this data with a single API call, or would we need to make multiple API calls? How can you tell?
 
-I think it would need to be multiple API calls ( I mean maybe not manually, maybe you can have some loop that loops through all the users and replaces the ID in the URL with their ID for each call). I'm actually a little uncertain because with the URL above, it will return the relationship of some user to "you", so it it getting the relationship between the userID and the user associated with the access token? If so, I don't know how you would get the relationship between two other users...
+I think it would need to be multiple API calls ( I mean maybe not manually, maybe you can have some loop that loops through all the users and replaces the ID in the URL with their ID for each call). I'm actually a little uncertain because with the URL above, it will return the relationship of some user to "you", so it it getting the relationship between the userID and the user associated with the access token? If so, I don't know how you would get the relationship between two other users... --NEVERMIND I realize now that the AUTH TOKEN refers to the user of your app.. duh.
 
 6. Now, you want to see if anyone is tagging their photos as "gelato". What URL would you use for an API call to get a list of tags that contain the word "gelato"?
 
